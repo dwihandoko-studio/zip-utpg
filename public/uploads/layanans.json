@@ -1,0 +1,20 @@
+{
+    "layanans": [
+        { 
+            "layanan_id": "8b1a8183-6fa8-11ed-95ba-0242ac1a0004",
+            "layanan_nama": "SITUGU",
+            "layanan_deskripsi": "Sistem Verifikasi Validasi Usulan Tunjangan Guru",
+            "layanan_image": "situgu.png",
+            "layanan_url": "https://layanan.disdikbud.kntechline.id/situgu",
+            "layanan_status": 1
+        },
+        { 
+            "layanan_id": "8b1a8183-6fa8-11ed-95ba-0242ac1a0005",
+            "layanan_nama": "SI-TUPENG",
+            "layanan_deskripsi": "Sistem Verifikasi Validasi Usulan Tunjangan Pengawas",
+            "layanan_image": "situpeng.png",
+            "layanan_url": "https://layanan.disdikbud.kntechline.id/situpeng",
+            "layanan_status": 1
+        }
+    ]
+}

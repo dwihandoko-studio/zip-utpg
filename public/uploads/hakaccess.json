@@ -1,0 +1,741 @@
+{
+    "apps": [
+        { 
+            "menu_title": "Profil",
+            "menu_icon": "bx bxs-user-detail",
+            "menu": "web",
+            "sub_menu": [
+                {
+                    "sub_menu_key": "sambutan",
+                    "sub_menu_title": "Sambutan",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "sejarah",
+                    "sub_menu_title": "Sejarah",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "visimisi",
+                    "sub_menu_title": "Visi & Misi",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "tugasfungsi",
+                    "sub_menu_title": "Tugas & Fungsi",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "struktur",
+                    "sub_menu_title": "Struktur Organisasi",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "skm",
+                    "sub_menu_title": "Surveri Kepuasan Masyarakat",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "maklumat",
+                    "sub_menu_title": "Maklumat Instansi",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "motto",
+                    "sub_menu_title": "Motto Instansi",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        }
+                    ]
+                }
+            ]
+        },
+        { 
+            "menu_title": "Informasi Publik",
+            "menu_icon": "bx bx-detail",
+            "menu": "informasi",
+            "sub_menu": [
+                {
+                    "sub_menu_key": "katberita",
+                    "sub_menu_title": "Kategori Berita",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "berita",
+                    "sub_menu_title": "Berita",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "sop",
+                    "sub_menu_title": "SOP Disdikbud",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "agenda",
+                    "sub_menu_title": "Agenda",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "pengumuman",
+                    "sub_menu_title": "Pengumuman",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "katregulasi",
+                    "sub_menu_title": "Kategori Regulasi",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "regulasi",
+                    "sub_menu_title": "Regulasi",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "dokumen",
+                    "sub_menu_title": "Dokumen",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                }
+            ]
+        },
+        { 
+            "menu_title": "Galeri",
+            "menu_icon": "bx bx-image-alt",
+            "menu": "galeri",
+            "sub_menu": [
+                {
+                    "sub_menu_key": "slider",
+                    "sub_menu_title": "Slider Homepage",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "foto",
+                    "sub_menu_title": "Foto",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "video",
+                    "sub_menu_title": "Video",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                }
+            ]
+        },
+        { 
+            "menu_title": "Data",
+            "menu_icon": "bx bx-data",
+            "menu": "data",
+            "sub_menu": [
+                {
+                    "sub_menu_key": "jabatan",
+                    "sub_menu_title": "Jabatan",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "getParent"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "pegawai",
+                    "sub_menu_title": "Pegawai",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "getParent"
+                        },
+                        {
+                            "key": "createAkun"
+                        },
+                        {
+                            "key": "resetAkun"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "websekolah",
+                    "sub_menu_title": "Web Sekolah",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                }
+            ]
+        },
+        { 
+            "menu_title": "Setting",
+            "menu_icon": "bx bx-cog",
+            "menu": "setting",
+            "sub_menu": [
+                {
+                    "sub_menu_key": "pengguna",
+                    "sub_menu_title": "Pengguna",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "reset"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "hakaccess",
+                    "sub_menu_title": "Hak Akses",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "save"
+                        },
+                        {
+                            "key": "edit"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "website",
+                    "sub_menu_title": "Website",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "save"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "appslider",
+                    "sub_menu_title": "Aplikasi Slider",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "menulain",
+                    "sub_menu_title": "Menu Publik Lain-Lain",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                },
+                {
+                    "sub_menu_key": "portallayanan",
+                    "sub_menu_title": "Menu Portal Layanan",
+                    "aksi": [
+                        {
+                            "key": "index"
+                        },
+                        {
+                            "key": "data"
+                        },
+                        {
+                            "key": "detail"
+                        },
+                        {
+                            "key": "edit"
+                        },
+                        {
+                            "key": "editSave"
+                        },
+                        {
+                            "key": "add"
+                        },
+                        {
+                            "key": "addSave"
+                        },
+                        {
+                            "key": "delete"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

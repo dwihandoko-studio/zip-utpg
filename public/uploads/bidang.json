@@ -1,0 +1,22 @@
+[
+    {
+        "id": "bidang-paud-dikmas",
+        "bidang": "Bidang PAUD DIKMAS"
+    },
+    {
+        "id": "bidang-dikdas",
+        "bidang": "Bidang DIKDAS"
+    },
+    {
+        "id": "bidang-ptk",
+        "bidang": "Bidang PTK"
+    },
+    {
+        "id": "bidang-kebudayaan",
+        "bidang": "Bidang Kebudayaan"
+    },
+    {
+        "id": "sekretariat",
+        "bidang": "Sekretariat"
+    }
+]
