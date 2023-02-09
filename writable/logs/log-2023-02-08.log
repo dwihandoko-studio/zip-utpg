@@ -1,0 +1,320 @@
+ERROR - 2023-02-08 14:25:04 --> mysqli_sql_exception: Unknown column 'uid' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-08 14:25:04 --> Unknown column 'uid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = :uid:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-08 14:25:13 --> mysqli_sql_exception: Unknown column 'uid' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-08 14:25:13 --> Unknown column 'uid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = :uid:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-08 14:25:25 --> mysqli_sql_exception: Unknown column 'uid' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-08 14:25:25 --> Unknown column 'uid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = :uid:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-08 14:33:06 --> mysqli_sql_exception: Unknown column 'uid' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-08 14:33:06 --> Unknown column 'uid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = :uid:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-08 14:33:15 --> mysqli_sql_exception: Unknown column 'uid' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-08 14:33:15 --> Unknown column 'uid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = :uid:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-08 14:39:57 --> mysqli_sql_exception: Unknown column 'uid' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-08 14:39:57 --> Unknown column 'uid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'ef357115-a23d-4394-b368-8af132f622ed\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = :uid:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ops/Masterdata/Pengguna.php(746): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-08 14:46:31 --> Invalid file: situgu/ops/absen/detail.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('situgu/ops/absen/detail.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ops/absen/detail', [], true)
+ 3 APPPATH/Controllers/Situgu/Ops/Absen.php(311): view('situgu/ops/absen/detail', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Absen->detail()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Absen))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-08 15:20:43 --> Undefined property: stdClass::$fullname
+in APPPATH/Views/situgu/ptk/profil/index.php on line 46.
+ 1 APPPATH/Views/situgu/ptk/profil/index.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$fullname', 'APPPATH/Views/situgu/ptk/profil/index.php', 46, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ptk/profil/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ptk/profil/index', [], true)
+ 5 APPPATH/Controllers/Situgu/Ptk/Profil.php(53): view('situgu/ptk/profil/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Profil->data()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-08 15:23:12 --> mysqli_sql_exception: Unknown column 'a.ptk' in 'on clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `b`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.*, `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ptk/Profil.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Profil->data()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Profil))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-08 15:23:12 --> Unknown column 'a.ptk' in 'on clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `b`.*, `a`.`lampiran_foto`, `a`.`nama`, `a`.`nuptk`, `a`.`nip`, `a`.`nik`
+FROM `_ptk_tb` `a`
+LEFT JOIN `v_user` `b` ON `a`.`ptk` = `b`.`ptk_id`
+WHERE `a`.`id_ptk` = \'57a9c3b4-4f69-11e5-95f0-7f908c4e7a2d\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.*, `a`.`lampiran_foto`, `a`.`nama`, `a`.`nuptk`, `a`.`nip`, `a`.`nik`
+FROM `_ptk_tb` `a`
+LEFT JOIN `v_user` `b` ON `a`.`ptk` = `b`.`ptk_id`
+WHERE `a`.`id_ptk` = \'57a9c3b4-4f69-11e5-95f0-7f908c4e7a2d\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.*, `a`.`lampiran_foto`, `a`.`nama`, `a`.`nuptk`, `a`.`nip`, `a`.`nik`
+FROM `_ptk_tb` `a`
+LEFT JOIN `v_user` `b` ON `a`.`ptk` = `b`.`ptk_id`
+WHERE `a`.`id_ptk` = \'57a9c3b4-4f69-11e5-95f0-7f908c4e7a2d\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.*, `a`.`lampiran_foto`, `a`.`nama`, `a`.`nuptk`, `a`.`nip`, `a`.`nik`
+FROM `_ptk_tb` `a`
+LEFT JOIN `v_user` `b` ON `a`.`ptk` = `b`.`ptk_id`
+WHERE `a`.`id_ptk` = :a.id_ptk:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ptk/Profil.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Profil->data()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Profil))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-08 19:31:21 --> Trying to get property 'email_verified' of non-object
+in APPPATH/Views/situgu/ptk/home/index.php on line 4187.
+ 1 APPPATH/Views/situgu/ptk/home/index.php(4187): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'email_verified\' of non-object', 'APPPATH/Views/situgu/ptk/home/index.php', 4187, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ptk/home/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ptk/home/index', [], true)
+ 5 APPPATH/Controllers/Situgu/Ptk/Home.php(72): view('situgu/ptk/home/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-08 19:43:51 --> Trying to get property 'alamat' of non-object
+in APPPATH/Views/situgu/ops/masterdata/pengguna/add.php on line 26.
+ 1 APPPATH/Views/situgu/ops/masterdata/pengguna/add.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'alamat\' of non-object', 'APPPATH/Views/situgu/ops/masterdata/pengguna/add.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ops/masterdata/pengguna/add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ops/masterdata/pengguna/add', [], true)
+ 5 APPPATH/Controllers/Situgu/Ops/Masterdata/Pengguna.php(259): view('situgu/ops/masterdata/pengguna/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->add()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-08 19:44:22 --> Trying to get property 'alamat' of non-object
+in APPPATH/Views/situgu/ops/masterdata/pengguna/add.php on line 26.
+ 1 APPPATH/Views/situgu/ops/masterdata/pengguna/add.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'alamat\' of non-object', 'APPPATH/Views/situgu/ops/masterdata/pengguna/add.php', 26, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ops/masterdata/pengguna/add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ops/masterdata/pengguna/add', [], true)
+ 5 APPPATH/Controllers/Situgu/Ops/Masterdata/Pengguna.php(259): view('situgu/ops/masterdata/pengguna/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->add()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-08 21:55:21 --> Invalid file: situgu/ops/us/tamsil/antrian/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('situgu/ops/us/tamsil/antrian/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ops/us/tamsil/antrian/index', [], true)
+ 3 APPPATH/Controllers/Situgu/Ops/Us/Tamsil/Antrian.php(129): view('situgu/ops/us/tamsil/antrian/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Us\Tamsil\Antrian->data()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Us\Tamsil\Antrian))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-08 22:52:31 --> mysqli_sql_exception: Unknown column 'b.npsn' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /var/www/app/Models/Situgu/Ops/Tamsil/DitolakModel.php(76): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 /var/www/app/Controllers/Situgu/Ops/Us/Tamsil/Ditolak.php(104): App\Models\Situgu\Ops\Tamsil\DitolakModel->count_filtered('10801778')
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Us\Tamsil\Ditolak->getAll()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Us\Tamsil\Ditolak))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-08 22:52:31 --> Unknown column 'b.npsn' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `v_ditolak_usulan_tamsil`
+WHERE `id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+AND `b`.`npsn` = \'10801778\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `v_ditolak_usulan_tamsil`
+WHERE `id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+AND `b`.`npsn` = \'10801778\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `v_ditolak_usulan_tamsil`
+WHERE `id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+AND `b`.`npsn` = \'10801778\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `v_ditolak_usulan_tamsil`
+WHERE `id_tahun_tw` = :id_tahun_tw.1:
+AND `b`.`npsn` = :b.npsn:', [...], false)
+ 5 APPPATH/Models/Situgu/Ops/Tamsil/DitolakModel.php(76): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH/Controllers/Situgu/Ops/Us/Tamsil/Ditolak.php(104): App\Models\Situgu\Ops\Tamsil\DitolakModel->count_filtered('10801778')
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Us\Tamsil\Ditolak->getAll()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Us\Tamsil\Ditolak))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

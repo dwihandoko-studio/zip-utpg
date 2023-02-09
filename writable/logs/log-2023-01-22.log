@@ -1,0 +1,86 @@
+ERROR - 2023-01-22 20:29:52 --> mysqli_sql_exception: Unknown column 'c.absen_1' in 'field list' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `b`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.*, `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ptk/Us/Ajukan.php(192): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Us\Ajukan->getValidationAjuan()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Us\Ajukan))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-22 20:29:52 --> Unknown column 'c.absen_1' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `b`.*, `a`.`pang_golongan`, `a`.`pang_no`, `a`.`pang_tmt`, `a`.`pang_tgl`, `a`.`pang_tahun`, `a`.`pang_bulan`, `a`.`pangkat_terakhir` as `lampiran_pangkat`, `a`.`kgb_terakhir` as `lampiran_kgb`, `a`.`pernyataan_24jam` as `lampiran_pernyataan24`, `a`.`cuti` as `lampiran_cuti`, `a`.`pensiun` as `lampiran_pensiun`, `a`.`kematian` as `lampiran_kematian`, `a`.`lainnya` as `lampiran_att_lain`, `c`.`absen_1`, `c`.`absen_2`, `c`.`absen_3`, `c`.`lampiran_absen1`, `c`.`lampiran_absen2`, `c`.`lampiran_absen3`, `c`.`pembagian_tugas` as `lampiran_pembagian_tugas`, `c`.`slip_gaji` as `lampiran_slip_gaji`, `c`.`doc_lainnya` as `lampiran_doc_absen_lain`
+FROM `_upload_data_attribut` `a`
+JOIN `_ptk_tb` `b` ON `a`.`id_ptk` = `b`.`id`
+JOIN `_absen_kehadiran` `c` ON `a`.`id_ptk` = `c`.`id_ptk` AND `c`.`id_tahun_tw` = `a`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'fa892f32-4ae0-41f2-bff1-ee2e81ff6418\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.*, `a`.`pang_golongan`, `a`.`pang_no`, `a`.`pang_tmt`, `a`.`pang_tgl`, `a`.`pang_tahun`, `a`.`pang_bulan`, `a`.`pangkat_terakhir` as `lampiran_pangkat`, `a`.`kgb_terakhir` as `lampiran_kgb`, `a`.`pernyataan_24jam` as `lampiran_pernyataan24`, `a`.`cuti` as `lampiran_cuti`, `a`.`pensiun` as `lampiran_pensiun`, `a`.`kematian` as `lampiran_kematian`, `a`.`lainnya` as `lampiran_att_lain`, `c`.`absen_1`, `c`.`absen_2`, `c`.`absen_3`, `c`.`lampiran_absen1`, `c`.`lampiran_absen2`, `c`.`lampiran_absen3`, `c`.`pembagian_tugas` as `lampiran_pembagian_tugas`, `c`.`slip_gaji` as `lampiran_slip_gaji`, `c`.`doc_lainnya` as `lampiran_doc_absen_lain`
+FROM `_upload_data_attribut` `a`
+JOIN `_ptk_tb` `b` ON `a`.`id_ptk` = `b`.`id`
+JOIN `_absen_kehadiran` `c` ON `a`.`id_ptk` = `c`.`id_ptk` AND `c`.`id_tahun_tw` = `a`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'fa892f32-4ae0-41f2-bff1-ee2e81ff6418\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.*, `a`.`pang_golongan`, `a`.`pang_no`, `a`.`pang_tmt`, `a`.`pang_tgl`, `a`.`pang_tahun`, `a`.`pang_bulan`, `a`.`pangkat_terakhir` as `lampiran_pangkat`, `a`.`kgb_terakhir` as `lampiran_kgb`, `a`.`pernyataan_24jam` as `lampiran_pernyataan24`, `a`.`cuti` as `lampiran_cuti`, `a`.`pensiun` as `lampiran_pensiun`, `a`.`kematian` as `lampiran_kematian`, `a`.`lainnya` as `lampiran_att_lain`, `c`.`absen_1`, `c`.`absen_2`, `c`.`absen_3`, `c`.`lampiran_absen1`, `c`.`lampiran_absen2`, `c`.`lampiran_absen3`, `c`.`pembagian_tugas` as `lampiran_pembagian_tugas`, `c`.`slip_gaji` as `lampiran_slip_gaji`, `c`.`doc_lainnya` as `lampiran_doc_absen_lain`
+FROM `_upload_data_attribut` `a`
+JOIN `_ptk_tb` `b` ON `a`.`id_ptk` = `b`.`id`
+JOIN `_absen_kehadiran` `c` ON `a`.`id_ptk` = `c`.`id_ptk` AND `c`.`id_tahun_tw` = `a`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'fa892f32-4ae0-41f2-bff1-ee2e81ff6418\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.*, `a`.`pang_golongan`, `a`.`pang_no`, `a`.`pang_tmt`, `a`.`pang_tgl`, `a`.`pang_tahun`, `a`.`pang_bulan`, `a`.`pangkat_terakhir` as `lampiran_pangkat`, `a`.`kgb_terakhir` as `lampiran_kgb`, `a`.`pernyataan_24jam` as `lampiran_pernyataan24`, `a`.`cuti` as `lampiran_cuti`, `a`.`pensiun` as `lampiran_pensiun`, `a`.`kematian` as `lampiran_kematian`, `a`.`lainnya` as `lampiran_att_lain`, `c`.`absen_1`, `c`.`absen_2`, `c`.`absen_3`, `c`.`lampiran_absen1`, `c`.`lampiran_absen2`, `c`.`lampiran_absen3`, `c`.`pembagian_tugas` as `lampiran_pembagian_tugas`, `c`.`slip_gaji` as `lampiran_slip_gaji`, `c`.`doc_lainnya` as `lampiran_doc_absen_lain`
+FROM `_upload_data_attribut` `a`
+JOIN `_ptk_tb` `b` ON `a`.`id_ptk` = `b`.`id`
+JOIN `_absen_kehadiran` `c` ON `a`.`id_ptk` = `c`.`id_ptk` AND `c`.`id_tahun_tw` = `a`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = :a.id_ptk:
+AND `a`.`id_tahun_tw` = :a.id_tahun_tw:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ptk/Us/Ajukan.php(192): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Us\Ajukan->getValidationAjuan()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Us\Ajukan))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-22 20:30:12 --> mysqli_sql_exception: Unknown column 'c.absen_1' in 'field list' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `b`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.*, `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ptk/Us/Ajukan.php(192): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Us\Ajukan->getValidationAjuan()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Us\Ajukan))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-22 20:30:12 --> Unknown column 'c.absen_1' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `b`.*, `a`.`pang_golongan`, `a`.`pang_no`, `a`.`pang_tmt`, `a`.`pang_tgl`, `a`.`pang_tahun`, `a`.`pang_bulan`, `a`.`pangkat_terakhir` as `lampiran_pangkat`, `a`.`kgb_terakhir` as `lampiran_kgb`, `a`.`pernyataan_24jam` as `lampiran_pernyataan24`, `a`.`cuti` as `lampiran_cuti`, `a`.`pensiun` as `lampiran_pensiun`, `a`.`kematian` as `lampiran_kematian`, `a`.`lainnya` as `lampiran_att_lain`, `c`.`absen_1`, `c`.`absen_2`, `c`.`absen_3`, `c`.`lampiran_absen1`, `c`.`lampiran_absen2`, `c`.`lampiran_absen3`, `c`.`pembagian_tugas` as `lampiran_pembagian_tugas`, `c`.`slip_gaji` as `lampiran_slip_gaji`, `c`.`doc_lainnya` as `lampiran_doc_absen_lain`
+FROM `_upload_data_attribut` `a`
+JOIN `_ptk_tb` `b` ON `a`.`id_ptk` = `b`.`id`
+JOIN `_absen_kehadiran` `c` ON `a`.`id_ptk` = `c`.`id_ptk` AND `c`.`id_tahun_tw` = `a`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'fa892f32-4ae0-41f2-bff1-ee2e81ff6418\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.*, `a`.`pang_golongan`, `a`.`pang_no`, `a`.`pang_tmt`, `a`.`pang_tgl`, `a`.`pang_tahun`, `a`.`pang_bulan`, `a`.`pangkat_terakhir` as `lampiran_pangkat`, `a`.`kgb_terakhir` as `lampiran_kgb`, `a`.`pernyataan_24jam` as `lampiran_pernyataan24`, `a`.`cuti` as `lampiran_cuti`, `a`.`pensiun` as `lampiran_pensiun`, `a`.`kematian` as `lampiran_kematian`, `a`.`lainnya` as `lampiran_att_lain`, `c`.`absen_1`, `c`.`absen_2`, `c`.`absen_3`, `c`.`lampiran_absen1`, `c`.`lampiran_absen2`, `c`.`lampiran_absen3`, `c`.`pembagian_tugas` as `lampiran_pembagian_tugas`, `c`.`slip_gaji` as `lampiran_slip_gaji`, `c`.`doc_lainnya` as `lampiran_doc_absen_lain`
+FROM `_upload_data_attribut` `a`
+JOIN `_ptk_tb` `b` ON `a`.`id_ptk` = `b`.`id`
+JOIN `_absen_kehadiran` `c` ON `a`.`id_ptk` = `c`.`id_ptk` AND `c`.`id_tahun_tw` = `a`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'fa892f32-4ae0-41f2-bff1-ee2e81ff6418\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.*, `a`.`pang_golongan`, `a`.`pang_no`, `a`.`pang_tmt`, `a`.`pang_tgl`, `a`.`pang_tahun`, `a`.`pang_bulan`, `a`.`pangkat_terakhir` as `lampiran_pangkat`, `a`.`kgb_terakhir` as `lampiran_kgb`, `a`.`pernyataan_24jam` as `lampiran_pernyataan24`, `a`.`cuti` as `lampiran_cuti`, `a`.`pensiun` as `lampiran_pensiun`, `a`.`kematian` as `lampiran_kematian`, `a`.`lainnya` as `lampiran_att_lain`, `c`.`absen_1`, `c`.`absen_2`, `c`.`absen_3`, `c`.`lampiran_absen1`, `c`.`lampiran_absen2`, `c`.`lampiran_absen3`, `c`.`pembagian_tugas` as `lampiran_pembagian_tugas`, `c`.`slip_gaji` as `lampiran_slip_gaji`, `c`.`doc_lainnya` as `lampiran_doc_absen_lain`
+FROM `_upload_data_attribut` `a`
+JOIN `_ptk_tb` `b` ON `a`.`id_ptk` = `b`.`id`
+JOIN `_absen_kehadiran` `c` ON `a`.`id_ptk` = `c`.`id_ptk` AND `c`.`id_tahun_tw` = `a`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'fa892f32-4ae0-41f2-bff1-ee2e81ff6418\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `b`.*, `a`.`pang_golongan`, `a`.`pang_no`, `a`.`pang_tmt`, `a`.`pang_tgl`, `a`.`pang_tahun`, `a`.`pang_bulan`, `a`.`pangkat_terakhir` as `lampiran_pangkat`, `a`.`kgb_terakhir` as `lampiran_kgb`, `a`.`pernyataan_24jam` as `lampiran_pernyataan24`, `a`.`cuti` as `lampiran_cuti`, `a`.`pensiun` as `lampiran_pensiun`, `a`.`kematian` as `lampiran_kematian`, `a`.`lainnya` as `lampiran_att_lain`, `c`.`absen_1`, `c`.`absen_2`, `c`.`absen_3`, `c`.`lampiran_absen1`, `c`.`lampiran_absen2`, `c`.`lampiran_absen3`, `c`.`pembagian_tugas` as `lampiran_pembagian_tugas`, `c`.`slip_gaji` as `lampiran_slip_gaji`, `c`.`doc_lainnya` as `lampiran_doc_absen_lain`
+FROM `_upload_data_attribut` `a`
+JOIN `_ptk_tb` `b` ON `a`.`id_ptk` = `b`.`id`
+JOIN `_absen_kehadiran` `c` ON `a`.`id_ptk` = `c`.`id_ptk` AND `c`.`id_tahun_tw` = `a`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = :a.id_ptk:
+AND `a`.`id_tahun_tw` = :a.id_tahun_tw:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ptk/Us/Ajukan.php(192): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Us\Ajukan->getValidationAjuan()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Us\Ajukan))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

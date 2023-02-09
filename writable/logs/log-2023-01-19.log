@@ -1,0 +1,96 @@
+ERROR - 2023-01-19 15:11:52 --> mysqli_sql_exception: Unknown column 'uid' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ops/Masterdata/Pengguna.php(577): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-19 15:11:52 --> Unknown column 'uid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'f98474fa-000a-4c6c-8595-b31c0b275989\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'f98474fa-000a-4c6c-8595-b31c0b275989\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'f98474fa-000a-4c6c-8595-b31c0b275989\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = :uid:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ops/Masterdata/Pengguna.php(577): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 15:39:01 --> Class 'App\Models\Situgu\Ops\UpkelengkapanModel' not found
+in APPPATH/Controllers/Situgu/Ops/Doc/Upkelengkapan.php on line 31.
+ 1 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Doc\Upkelengkapan->getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Doc\Upkelengkapan))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-19 15:42:35 --> mysqli_sql_exception: Unknown column 'b.tahun' in 'order clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Models/Situgu/Ops/UpkelengkapanModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/Controllers/Situgu/Ops/Doc/Upkelengkapan.php(66): App\Models\Situgu\Ops\UpkelengkapanModel->get_datatables('10801778')
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Doc\Upkelengkapan->getAll()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Doc\Upkelengkapan))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-19 15:42:35 --> Unknown column 'b.tahun' in 'order clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_absen_kehadiran` `a`
+WHERE `a`.`npsn` = \'10801778\'
+GROUP BY `a`.`id_tahun_tw`
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_absen_kehadiran` `a`
+WHERE `a`.`npsn` = \'10801778\'
+GROUP BY `a`.`id_tahun_tw`
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_absen_kehadiran` `a`
+WHERE `a`.`npsn` = \'10801778\'
+GROUP BY `a`.`id_tahun_tw`
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_absen_kehadiran` `a`
+WHERE `a`.`npsn` = :a.npsn:
+GROUP BY `a`.`id_tahun_tw`
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10', [...], false)
+ 5 APPPATH/Models/Situgu/Ops/UpkelengkapanModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Situgu/Ops/Doc/Upkelengkapan.php(66): App\Models\Situgu\Ops\UpkelengkapanModel->get_datatables('10801778')
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Doc\Upkelengkapan->getAll()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Doc\Upkelengkapan))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 23:04:18 --> Undefined property: stdClass::$id_tahun_tw
+in APPPATH/Controllers/Situgu/Ops/Doc/Ptk.php on line 159.
+ 1 APPPATH/Controllers/Situgu/Ops/Doc/Ptk.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_tahun_tw', 'APPPATH/Controllers/Situgu/Ops/Doc/Ptk.php', 159, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Doc\Ptk->getAllDoc()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Doc\Ptk))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-19 23:09:56 --> Undefined variable: id
+in APPPATH/Controllers/Situgu/Ops/Doc/Ptk.php on line 333.
+ 1 APPPATH/Controllers/Situgu/Ops/Doc/Ptk.php(333): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Controllers/Situgu/Ops/Doc/Ptk.php', 333, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Doc\Ptk->detail()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Doc\Ptk))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,75 @@
+ERROR - 2023-01-25 20:42:55 --> mysqli_sql_exception: Unknown column 'b.nama' in 'field list' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /var/www/app/Models/Situgu/Ks/VerifikasiModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/Controllers/Situgu/Ks/Verifikasi/Tamsil.php(68): App\Models\Situgu\Ks\VerifikasiModel->get_datatables('10801778', 'tamsil')
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Verifikasi\Tamsil->getAll()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Verifikasi\Tamsil))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-25 20:42:55 --> Unknown column 'b.nama' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `b`.`nama`, `b`.`nuptk`, `b`.`nik`, `b`.`npsn`, `b`.`jenis_ptk`
+FROM `_tb_temp_usulan_detail` `a`
+JOIN `_ptk_tb` ON `a`.`id_ptk` = `b`.`id`
+WHERE `a`.`jenis_tunjangan` = \'tamsil\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+AND `b`.`npsn` = \'10801778\'
+ORDER BY `kecamatan` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `b`.`nama`, `b`.`nuptk`, `b`.`nik`, `b`.`npsn`, `b`.`jenis_ptk`
+FROM `_tb_temp_usulan_detail` `a`
+JOIN `_ptk_tb` ON `a`.`id_ptk` = `b`.`id`
+WHERE `a`.`jenis_tunjangan` = \'tamsil\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+AND `b`.`npsn` = \'10801778\'
+ORDER BY `kecamatan` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `b`.`nama`, `b`.`nuptk`, `b`.`nik`, `b`.`npsn`, `b`.`jenis_ptk`
+FROM `_tb_temp_usulan_detail` `a`
+JOIN `_ptk_tb` ON `a`.`id_ptk` = `b`.`id`
+WHERE `a`.`jenis_tunjangan` = \'tamsil\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+AND `b`.`npsn` = \'10801778\'
+ORDER BY `kecamatan` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`nama`, `b`.`nuptk`, `b`.`nik`, `b`.`npsn`, `b`.`jenis_ptk`
+FROM `_tb_temp_usulan_detail` `a`
+JOIN `_ptk_tb` ON `a`.`id_ptk` = `b`.`id`
+WHERE `a`.`jenis_tunjangan` = :a.jenis_tunjangan:
+AND `a`.`id_tahun_tw` = :a.id_tahun_tw:
+AND `b`.`npsn` = :b.npsn:
+ORDER BY `kecamatan` ASC
+ LIMIT 10', [...], false)
+ 5 APPPATH/Models/Situgu/Ks/VerifikasiModel.php(60): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Situgu/Ks/Verifikasi/Tamsil.php(68): App\Models\Situgu\Ks\VerifikasiModel->get_datatables('10801778', 'tamsil')
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Verifikasi\Tamsil->getAll()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Verifikasi\Tamsil))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 21:21:27 --> Undefined property: stdClass::$emailAkun
+in APPPATH/Views/situgu/ks/verifikasi/tamsil/detail.php on line 70.
+ 1 APPPATH/Views/situgu/ks/verifikasi/tamsil/detail.php(70): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$emailAkun', 'APPPATH/Views/situgu/ks/verifikasi/tamsil/detail.php', 70, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ks/verifikasi/tamsil/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ks/verifikasi/tamsil/detail', [], true)
+ 5 APPPATH/Controllers/Situgu/Ks/Verifikasi/Tamsil.php(189): view('situgu/ks/verifikasi/tamsil/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Verifikasi\Tamsil->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Verifikasi\Tamsil))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-25 21:51:55 --> Undefined variable: ptk
+in APPPATH/Views/situgu/ks/verifikasi/tamsil/detail.php on line 13.
+ 1 APPPATH/Views/situgu/ks/verifikasi/tamsil/detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ptk', 'APPPATH/Views/situgu/ks/verifikasi/tamsil/detail.php', 13, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ks/verifikasi/tamsil/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ks/verifikasi/tamsil/detail', [], true)
+ 5 APPPATH/Controllers/Situgu/Ks/Verifikasi/Tamsil.php(189): view('situgu/ks/verifikasi/tamsil/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Verifikasi\Tamsil->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Verifikasi\Tamsil))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

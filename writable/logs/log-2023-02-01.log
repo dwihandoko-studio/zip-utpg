@@ -1,0 +1,44 @@
+CRITICAL - 2023-02-01 00:02:57 --> Undefined variable: doc
+in APPPATH/Libraries/Downloadlib.php on line 21.
+ 1 APPPATH/Libraries/Downloadlib.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: doc', 'APPPATH/Libraries/Downloadlib.php', 21, [...])
+ 2 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(525): App\Libraries\Downloadlib->download('FCPATH/upload/generate/sptjm/tamsil/TAMSIL-2023-1-10801778-1675095584.docx', 'sptjm-TAMSIL-2023-1-10801778-1675095584.pdf')
+ 3 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(451): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 00:03:18 --> Method loadtemplate is not defined.
+in VENDORPATH/phpoffice/phpword/src/PhpWord/PhpWord.php on line 148.
+ 1 APPPATH/Libraries/Downloadlib.php(21): PhpOffice\PhpWord\PhpWord->__call('loadtemplate', [...])
+ 2 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(525): App\Libraries\Downloadlib->download('FCPATH/upload/generate/sptjm/tamsil/TAMSIL-2023-1-10801778-1675095584.docx', 'sptjm-TAMSIL-2023-1-10801778-1675095584.pdf')
+ 3 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(451): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 00:34:17 --> Call to undefined function App\Libraries\forceDownload()
+in APPPATH/Libraries/Downloadlib.php on line 36.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(525): App\Libraries\Downloadlib->downloaded('FCPATH/upload/generate/sptjm/tamsil/TAMSIL-2023-1-10801778-1675095584.docx', 'TAMSIL-2023-1-10801778-1675095584.pdf')
+ 2 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(451): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 01:18:14 --> Call to undefined method CodeIgniter\HTTP\Response::sendFile()
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 530.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(451): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-01 13:41:08 --> Undefined property: stdClass::$date_approve_ks
+in APPPATH/Views/situgu/ptk/us/ajukan/index.php on line 454.
+ 1 APPPATH/Views/situgu/ptk/us/ajukan/index.php(454): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$date_approve_ks', 'APPPATH/Views/situgu/ptk/us/ajukan/index.php', 454, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ptk/us/ajukan/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ptk/us/ajukan/index', [], true)
+ 5 APPPATH/Controllers/Situgu/Ptk/Us/Ajukan.php(70): view('situgu/ptk/us/ajukan/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Us\Ajukan->data()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Us\Ajukan))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

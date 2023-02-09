@@ -1,0 +1,172 @@
+CRITICAL - 2023-01-31 00:08:57 --> Call to undefined method Smalot\PdfParser\Document::getTableContent()
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 564.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(441): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 00:09:42 --> Invalid PDF data: missing %PDF header.
+in VENDORPATH/smalot/pdfparser/src/Smalot/PdfParser/RawData/RawDataParser.php on line 887.
+ 1 VENDORPATH/smalot/pdfparser/src/Smalot/PdfParser/Parser.php(102): Smalot\PdfParser\RawData\RawDataParser->parseData('PEMERINTAH KABUPATEN KAB. LAMPUNG TENGAH  
+DINAS PENDIDIKAN DAN KEBUDAYAAN 
+SD NEGERI 3 GUNUNG SUGIH PASAR 
+NPSN : 10801778, Panggung Asri Gunung Sugih, Kec. Gunung Sugih  
+ - .  
+Telp : 081379477906, E-mail :  gunungsugihpasarsdn3@gmail.com 
+ 	
+SURAT PERNYATAAN 	TANGGUNG JAWAB MUTLAK (SPTJM)	 	
+USULAN PENCARIAN TUNJANGAN PROFESI GURU (TPG)  TRIWULAN 1 TAHUN ANGGARAN 2023  Nomor : NOMOR_SPTJM  	
+   
+Yang bertanda tangan di bawah ini : 
+Nama   : Siti Patimah 
+Jabatan   : 0 
+Satuan Pendidikan   : SD NEGERI 3 GUNUNG SUGIH PASAR  
+menyatakan dengan sesungguhnya bahwa: 
+1.  Bertanggung  jawab  penuh  atas  kebenaran  dan  kemutakh iran  data  yang  diusulkan  dan  dikirimkan 
+oleh  masing-masing  PTK  di  sekolahan  kami,  melalui  ap likasi  Si-Tugu  (Sistem  Informasi  Tunjangan 
+Guru) Kabupaten Lampung Tengah  Periode TW. 1 Tahun 2023 . 
+2.   Saya  telah  melakukan  verifikasi  dan  validasi  data  g uru  yang  diajukan,  serta  melakukan  monitoring 
+proses  kinerja  masing-masing  guru  di  Satuan  Pendidi kan  yang  saya  pimpin.  Apabila  dari  data  guru 
+yang mengajukan, dari hasil verifikasi validasi data  oleh Admin Dinas, ditemukan syarat dalam proses 
+usulan pencairan TPG yang diatur berdasarkan PP 41  2017 dan PP 19 tentang Perubahan atas PP 41 
+tahun  2009,  tidak  sesuai/belum  memenuhi  persyaratan   dengan  kondisi  keadaan  yang  sebenarnya, 
+maka  saya  menerima  usulan  tersebut  ditolak  untuk  da pat  diperbaiki  dan  diajukan  kembali  pada 
+periode jadwal yang telah ditetapkan. 
+3.   Apabila  di  kemudian  hari  terdapat  ketidaksesuaian  a ntara  data  yang  dikirimkan/diajukan  dengan 
+keadaan  yang  sebenarnya,  kami  bertanggung  jawab  sep enuhnya  dan  bersedia  menerima  sanksi 
+sesuai dengan ketentuan peraturan perundang-undanga n.  
+ 	
+Jumlah PTK Yang Mengajukan Validasi Usulan TPG	 	Keterangan	 	
+1	 	Di setujui Kepala Sekolah	 	
+  
+Demikian pernyataan ini kami buat dengan sebenar-be narnya. 
+     Kab. Lampung Tengah, 31 Januari 2023  
+0, SD NEGERI 3 GUNUNG SUGIH PASAR       	
+Materai 10.000 
+    
+Siti Patimah 
+NIP : 196412171984122001
+
+LAMPIRAN SPTJM TUNJANGAN PROFESI GURU (TPG) TRIWULAN 1, TAHUN ANGGARAN 2023 	SD NEGERI 3 GUNUNG SUGIH PASAR 	NPSN : 10801778, Panggung Asri Gunung Sugih, KECAMATAN_SEKOL AH 
+ - .  
+ 	
+No  NRG  No. Peserta  NUPTK  NIP  Nama  Gol 
+Masa
+ 
+Gaji Pokok Sesuai SPJ  
+Gaji 
+Pembayaran TW. 3 Bulan Juli s/d September
+ 
+NPWP  No. Rekening  Cabang Bank 
+Thn  Bln 
+Jml Bln  Jml Uang  PPH 21 
+Jml Diterima 	
+ 
+  
+, 31 Januari 2023  
+0, SD NEGERI 3 GUNUNG SUGIH PASAR      	
+Tidak Pakai Materai  	  
+Siti Patimah 
+NIP : 196412171984122001')
+ 2 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(593): Smalot\PdfParser\Parser->parseContent('PEMERINTAH KABUPATEN KAB. LAMPUNG TENGAH  
+DINAS PENDIDIKAN DAN KEBUDAYAAN 
+SD NEGERI 3 GUNUNG SUGIH PASAR 
+NPSN : 10801778, Panggung Asri Gunung Sugih, Kec. Gunung Sugih  
+ - .  
+Telp : 081379477906, E-mail :  gunungsugihpasarsdn3@gmail.com 
+ 	
+SURAT PERNYATAAN 	TANGGUNG JAWAB MUTLAK (SPTJM)	 	
+USULAN PENCARIAN TUNJANGAN PROFESI GURU (TPG)  TRIWULAN 1 TAHUN ANGGARAN 2023  Nomor : NOMOR_SPTJM  	
+   
+Yang bertanda tangan di bawah ini : 
+Nama   : Siti Patimah 
+Jabatan   : 0 
+Satuan Pendidikan   : SD NEGERI 3 GUNUNG SUGIH PASAR  
+menyatakan dengan sesungguhnya bahwa: 
+1.  Bertanggung  jawab  penuh  atas  kebenaran  dan  kemutakh iran  data  yang  diusulkan  dan  dikirimkan 
+oleh  masing-masing  PTK  di  sekolahan  kami,  melalui  ap likasi  Si-Tugu  (Sistem  Informasi  Tunjangan 
+Guru) Kabupaten Lampung Tengah  Periode TW. 1 Tahun 2023 . 
+2.   Saya  telah  melakukan  verifikasi  dan  validasi  data  g uru  yang  diajukan,  serta  melakukan  monitoring 
+proses  kinerja  masing-masing  guru  di  Satuan  Pendidi kan  yang  saya  pimpin.  Apabila  dari  data  guru 
+yang mengajukan, dari hasil verifikasi validasi data  oleh Admin Dinas, ditemukan syarat dalam proses 
+usulan pencairan TPG yang diatur berdasarkan PP 41  2017 dan PP 19 tentang Perubahan atas PP 41 
+tahun  2009,  tidak  sesuai/belum  memenuhi  persyaratan   dengan  kondisi  keadaan  yang  sebenarnya, 
+maka  saya  menerima  usulan  tersebut  ditolak  untuk  da pat  diperbaiki  dan  diajukan  kembali  pada 
+periode jadwal yang telah ditetapkan. 
+3.   Apabila  di  kemudian  hari  terdapat  ketidaksesuaian  a ntara  data  yang  dikirimkan/diajukan  dengan 
+keadaan  yang  sebenarnya,  kami  bertanggung  jawab  sep enuhnya  dan  bersedia  menerima  sanksi 
+sesuai dengan ketentuan peraturan perundang-undanga n.  
+ 	
+Jumlah PTK Yang Mengajukan Validasi Usulan TPG	 	Keterangan	 	
+1	 	Di setujui Kepala Sekolah	 	
+  
+Demikian pernyataan ini kami buat dengan sebenar-be narnya. 
+     Kab. Lampung Tengah, 31 Januari 2023  
+0, SD NEGERI 3 GUNUNG SUGIH PASAR       	
+Materai 10.000 
+    
+Siti Patimah 
+NIP : 196412171984122001
+
+LAMPIRAN SPTJM TUNJANGAN PROFESI GURU (TPG) TRIWULAN 1, TAHUN ANGGARAN 2023 	SD NEGERI 3 GUNUNG SUGIH PASAR 	NPSN : 10801778, Panggung Asri Gunung Sugih, KECAMATAN_SEKOL AH 
+ - .  
+ 	
+No  NRG  No. Peserta  NUPTK  NIP  Nama  Gol 
+Masa
+ 
+Gaji Pokok Sesuai SPJ  
+Gaji 
+Pembayaran TW. 3 Bulan Juli s/d September
+ 
+NPWP  No. Rekening  Cabang Bank 
+Thn  Bln 
+Jml Bln  Jml Uang  PPH 21 
+Jml Diterima 	
+ 
+  
+, 31 Januari 2023  
+0, SD NEGERI 3 GUNUNG SUGIH PASAR      	
+Tidak Pakai Materai  	  
+Siti Patimah 
+NIP : 196412171984122001')
+ 3 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(441): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 00:18:46 --> Call to undefined method Smalot\PdfParser\Document::getElements()
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 464.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(445): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 21:17:03 --> Class 'PhpOffice\PhpWord\IOFactory' not found
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 456.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(448): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 21:38:52 --> Undefined property: PhpOffice\PhpWord\PhpWord::$getSections
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 458.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(458): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: PhpOffice\\PhpWord\\PhpWord::$getSections', 'APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php', 458, [...])
+ 2 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(448): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 21:41:17 --> Object of class PhpOffice\PhpWord\PhpWord could not be converted to string
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 462.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(448): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-31 21:44:20 --> Call to a member function getText() on null
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 461.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(448): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

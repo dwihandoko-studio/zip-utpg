@@ -1,0 +1,87 @@
+ERROR - 2022-09-02 00:47:48 --> mysqli_sql_exception: Duplicate entry 'bunga-kampung-merdeka-belajar-2022-09-02.html' for key 'url' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `_tb_fot...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `_tb_fot...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `_tb_fot...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `_tb_fot...', Array, false)
+#4 /var/www/app/Controllers/A/Galeri/Foto.php(486): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\A\Galeri\Foto->editSave()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Galeri\Foto))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-02 00:47:53 --> mysqli_sql_exception: Duplicate entry 'bunga-kampung-merdeka-belajar-2022-09-02.html' for key 'url' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `_tb_fot...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `_tb_fot...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `_tb_fot...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `_tb_fot...', Array, false)
+#4 /var/www/app/Controllers/A/Galeri/Foto.php(486): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\A\Galeri\Foto->editSave()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Galeri\Foto))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-02 00:48:37 --> mysqli_sql_exception: Duplicate entry 'bunga-kampung-merdeka-belajar-2022-09-02.html' for key 'url' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `_tb_fot...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `_tb_fot...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `_tb_fot...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `_tb_fot...', Array, false)
+#4 /var/www/app/Controllers/A/Galeri/Foto.php(486): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\A\Galeri\Foto->editSave()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Galeri\Foto))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-02 00:48:45 --> mysqli_sql_exception: Duplicate entry 'bunga-kampung-merdeka-belajar-2022-09-02.html' for key 'url' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `_tb_fot...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `_tb_fot...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `_tb_fot...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `_tb_fot...', Array, false)
+#4 /var/www/app/Controllers/A/Galeri/Foto.php(486): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\A\Galeri\Foto->editSave()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Galeri\Foto))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-02 00:49:18 --> mysqli_sql_exception: Duplicate entry 'bunga-kampung-merdeka-belajar-2022-09-02.html' for key 'url' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `_tb_fot...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `_tb_fot...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `_tb_fot...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `_tb_fot...', Array, false)
+#4 /var/www/app/Controllers/A/Galeri/Foto.php(486): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\A\Galeri\Foto->editSave()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Galeri\Foto))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-02 00:51:32 --> mysqli_sql_exception: Duplicate entry 'bunga-kampung-merdeka-belajar-2022-09-02.html' for key 'url' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `_tb_fot...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `_tb_fot...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `_tb_fot...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `_tb_fot...', Array, false)
+#4 /var/www/app/Controllers/A/Galeri/Foto.php(486): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\A\Galeri\Foto->editSave()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Galeri\Foto))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-02 00:51:32 --> Duplicate entry 'bunga-kampung-merdeka-belajar-2022-09-02.html' for key 'url'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('UPDATE `_tb_foto` SET `judul` = \'Bunga Kampung Merdeka Belajar\', `status` = \'1\', `user_updated` = \'1\', `updated_at` = \'2022-09-02 00:51:32\', `url` = \'bunga-kampung-merdeka-belajar-2022-09-02.html\'
+WHERE `id` = \'6\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `_tb_foto` SET `judul` = \'Bunga Kampung Merdeka Belajar\', `status` = \'1\', `user_updated` = \'1\', `updated_at` = \'2022-09-02 00:51:32\', `url` = \'bunga-kampung-merdeka-belajar-2022-09-02.html\'
+WHERE `id` = \'6\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `_tb_foto` SET `judul` = \'Bunga Kampung Merdeka Belajar\', `status` = \'1\', `user_updated` = \'1\', `updated_at` = \'2022-09-02 00:51:32\', `url` = \'bunga-kampung-merdeka-belajar-2022-09-02.html\'
+WHERE `id` = \'6\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `_tb_foto` SET `judul` = :judul:, `status` = :status:, `user_updated` = :user_updated:, `updated_at` = :updated_at:, `url` = :url:
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Controllers/A/Galeri/Foto.php(486): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\A\Galeri\Foto->editSave()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Galeri\Foto))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

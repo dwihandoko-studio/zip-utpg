@@ -1,0 +1,175 @@
+ERROR - 2023-02-07 00:18:31 --> mysqli_sql_exception: Unknown column 'd.cuti_pensiun_kematian' in 'field list' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `c`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `c`.*, `...', Array, false)
+#4 /var/www/app/Models/Situgu/Ops/DocptkModel.php(68): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/Controllers/Situgu/Ops/Doc/Ptk.php(132): App\Models\Situgu\Ops\DocptkModel->get_datatables()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Doc\Ptk->getAllDoc()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Doc\Ptk))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 00:18:31 --> Unknown column 'd.cuti_pensiun_kematian' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `c`.*, `b`.`tahun`, `b`.`tw`, `a`.`lampiran_absen1`, `a`.`lampiran_absen2`, `a`.`lampiran_absen3`, `a`.`pembagian_tugas`, `a`.`slip_gaji`, `a`.`id_tahun_tw`, `a`.`doc_lainnya`, `a`.`is_locked` as `lockedAbsen`, `d`.`pangkat_terakhir` as `doc_pangkat_terakhir`, `d`.`kgb_terakhir` as `doc_kgb_terakhir`, `d`.`pernyataan_24jam` as `doc_pernyataan_24jam`, `d`.`cuti_pensiun_kematian` as `doc_cuti_pensiun_kematian`, `d`.`lainnya` as `doc_attr_lainnya`, `d`.`is_locked` as `lockedAttr`
+FROM `_absen_kehadiran` `a`
+LEFT JOIN `_ref_tahun_tw` `b` ON `a`.`id_tahun_tw` = `b`.`id`
+LEFT JOIN `_ptk_tb` `c` ON `a`.`id_ptk` = `c`.`id`
+LEFT JOIN `_upload_data_attribut` `d` ON `a`.`id_ptk` = `d`.`id_ptk` AND `a`.`id_tahun_tw` = `d`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'02fb8571-c9d5-41fd-9947-7e6567adb418\'
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.*, `b`.`tahun`, `b`.`tw`, `a`.`lampiran_absen1`, `a`.`lampiran_absen2`, `a`.`lampiran_absen3`, `a`.`pembagian_tugas`, `a`.`slip_gaji`, `a`.`id_tahun_tw`, `a`.`doc_lainnya`, `a`.`is_locked` as `lockedAbsen`, `d`.`pangkat_terakhir` as `doc_pangkat_terakhir`, `d`.`kgb_terakhir` as `doc_kgb_terakhir`, `d`.`pernyataan_24jam` as `doc_pernyataan_24jam`, `d`.`cuti_pensiun_kematian` as `doc_cuti_pensiun_kematian`, `d`.`lainnya` as `doc_attr_lainnya`, `d`.`is_locked` as `lockedAttr`
+FROM `_absen_kehadiran` `a`
+LEFT JOIN `_ref_tahun_tw` `b` ON `a`.`id_tahun_tw` = `b`.`id`
+LEFT JOIN `_ptk_tb` `c` ON `a`.`id_ptk` = `c`.`id`
+LEFT JOIN `_upload_data_attribut` `d` ON `a`.`id_ptk` = `d`.`id_ptk` AND `a`.`id_tahun_tw` = `d`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'02fb8571-c9d5-41fd-9947-7e6567adb418\'
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.*, `b`.`tahun`, `b`.`tw`, `a`.`lampiran_absen1`, `a`.`lampiran_absen2`, `a`.`lampiran_absen3`, `a`.`pembagian_tugas`, `a`.`slip_gaji`, `a`.`id_tahun_tw`, `a`.`doc_lainnya`, `a`.`is_locked` as `lockedAbsen`, `d`.`pangkat_terakhir` as `doc_pangkat_terakhir`, `d`.`kgb_terakhir` as `doc_kgb_terakhir`, `d`.`pernyataan_24jam` as `doc_pernyataan_24jam`, `d`.`cuti_pensiun_kematian` as `doc_cuti_pensiun_kematian`, `d`.`lainnya` as `doc_attr_lainnya`, `d`.`is_locked` as `lockedAttr`
+FROM `_absen_kehadiran` `a`
+LEFT JOIN `_ref_tahun_tw` `b` ON `a`.`id_tahun_tw` = `b`.`id`
+LEFT JOIN `_ptk_tb` `c` ON `a`.`id_ptk` = `c`.`id`
+LEFT JOIN `_upload_data_attribut` `d` ON `a`.`id_ptk` = `d`.`id_ptk` AND `a`.`id_tahun_tw` = `d`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'02fb8571-c9d5-41fd-9947-7e6567adb418\'
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `c`.*, `b`.`tahun`, `b`.`tw`, `a`.`lampiran_absen1`, `a`.`lampiran_absen2`, `a`.`lampiran_absen3`, `a`.`pembagian_tugas`, `a`.`slip_gaji`, `a`.`id_tahun_tw`, `a`.`doc_lainnya`, `a`.`is_locked` as `lockedAbsen`, `d`.`pangkat_terakhir` as `doc_pangkat_terakhir`, `d`.`kgb_terakhir` as `doc_kgb_terakhir`, `d`.`pernyataan_24jam` as `doc_pernyataan_24jam`, `d`.`cuti_pensiun_kematian` as `doc_cuti_pensiun_kematian`, `d`.`lainnya` as `doc_attr_lainnya`, `d`.`is_locked` as `lockedAttr`
+FROM `_absen_kehadiran` `a`
+LEFT JOIN `_ref_tahun_tw` `b` ON `a`.`id_tahun_tw` = `b`.`id`
+LEFT JOIN `_ptk_tb` `c` ON `a`.`id_ptk` = `c`.`id`
+LEFT JOIN `_upload_data_attribut` `d` ON `a`.`id_ptk` = `d`.`id_ptk` AND `a`.`id_tahun_tw` = `d`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = :a.id_ptk:
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10', [...], false)
+ 5 APPPATH/Models/Situgu/Ops/DocptkModel.php(68): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Situgu/Ops/Doc/Ptk.php(132): App\Models\Situgu\Ops\DocptkModel->get_datatables()
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Doc\Ptk->getAllDoc()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Doc\Ptk))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-07 00:21:49 --> mysqli_sql_exception: Unknown column 'd.cuti_pensiun_kematian' in 'field list' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `c`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `c`.*, `...', Array, false)
+#4 /var/www/app/Models/Situgu/Ops/DocptkModel.php(68): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/Controllers/Situgu/Ops/Doc/Ptk.php(132): App\Models\Situgu\Ops\DocptkModel->get_datatables()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Doc\Ptk->getAllDoc()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Doc\Ptk))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-02-07 00:21:49 --> Unknown column 'd.cuti_pensiun_kematian' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `c`.*, `b`.`tahun`, `b`.`tw`, `a`.`lampiran_absen1`, `a`.`lampiran_absen2`, `a`.`lampiran_absen3`, `a`.`pembagian_tugas`, `a`.`slip_gaji`, `a`.`id_tahun_tw`, `a`.`doc_lainnya`, `a`.`is_locked` as `lockedAbsen`, `d`.`pangkat_terakhir` as `doc_pangkat_terakhir`, `d`.`kgb_terakhir` as `doc_kgb_terakhir`, `d`.`pernyataan_24jam` as `doc_pernyataan_24jam`, `d`.`cuti_pensiun_kematian` as `doc_cuti_pensiun_kematian`, `d`.`lainnya` as `doc_attr_lainnya`, `d`.`is_locked` as `lockedAttr`
+FROM `_absen_kehadiran` `a`
+LEFT JOIN `_ref_tahun_tw` `b` ON `a`.`id_tahun_tw` = `b`.`id`
+LEFT JOIN `_ptk_tb` `c` ON `a`.`id_ptk` = `c`.`id`
+LEFT JOIN `_upload_data_attribut` `d` ON `a`.`id_ptk` = `d`.`id_ptk` AND `a`.`id_tahun_tw` = `d`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'02fb8571-c9d5-41fd-9947-7e6567adb418\'
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.*, `b`.`tahun`, `b`.`tw`, `a`.`lampiran_absen1`, `a`.`lampiran_absen2`, `a`.`lampiran_absen3`, `a`.`pembagian_tugas`, `a`.`slip_gaji`, `a`.`id_tahun_tw`, `a`.`doc_lainnya`, `a`.`is_locked` as `lockedAbsen`, `d`.`pangkat_terakhir` as `doc_pangkat_terakhir`, `d`.`kgb_terakhir` as `doc_kgb_terakhir`, `d`.`pernyataan_24jam` as `doc_pernyataan_24jam`, `d`.`cuti_pensiun_kematian` as `doc_cuti_pensiun_kematian`, `d`.`lainnya` as `doc_attr_lainnya`, `d`.`is_locked` as `lockedAttr`
+FROM `_absen_kehadiran` `a`
+LEFT JOIN `_ref_tahun_tw` `b` ON `a`.`id_tahun_tw` = `b`.`id`
+LEFT JOIN `_ptk_tb` `c` ON `a`.`id_ptk` = `c`.`id`
+LEFT JOIN `_upload_data_attribut` `d` ON `a`.`id_ptk` = `d`.`id_ptk` AND `a`.`id_tahun_tw` = `d`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'02fb8571-c9d5-41fd-9947-7e6567adb418\'
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.*, `b`.`tahun`, `b`.`tw`, `a`.`lampiran_absen1`, `a`.`lampiran_absen2`, `a`.`lampiran_absen3`, `a`.`pembagian_tugas`, `a`.`slip_gaji`, `a`.`id_tahun_tw`, `a`.`doc_lainnya`, `a`.`is_locked` as `lockedAbsen`, `d`.`pangkat_terakhir` as `doc_pangkat_terakhir`, `d`.`kgb_terakhir` as `doc_kgb_terakhir`, `d`.`pernyataan_24jam` as `doc_pernyataan_24jam`, `d`.`cuti_pensiun_kematian` as `doc_cuti_pensiun_kematian`, `d`.`lainnya` as `doc_attr_lainnya`, `d`.`is_locked` as `lockedAttr`
+FROM `_absen_kehadiran` `a`
+LEFT JOIN `_ref_tahun_tw` `b` ON `a`.`id_tahun_tw` = `b`.`id`
+LEFT JOIN `_ptk_tb` `c` ON `a`.`id_ptk` = `c`.`id`
+LEFT JOIN `_upload_data_attribut` `d` ON `a`.`id_ptk` = `d`.`id_ptk` AND `a`.`id_tahun_tw` = `d`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = \'02fb8571-c9d5-41fd-9947-7e6567adb418\'
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `c`.*, `b`.`tahun`, `b`.`tw`, `a`.`lampiran_absen1`, `a`.`lampiran_absen2`, `a`.`lampiran_absen3`, `a`.`pembagian_tugas`, `a`.`slip_gaji`, `a`.`id_tahun_tw`, `a`.`doc_lainnya`, `a`.`is_locked` as `lockedAbsen`, `d`.`pangkat_terakhir` as `doc_pangkat_terakhir`, `d`.`kgb_terakhir` as `doc_kgb_terakhir`, `d`.`pernyataan_24jam` as `doc_pernyataan_24jam`, `d`.`cuti_pensiun_kematian` as `doc_cuti_pensiun_kematian`, `d`.`lainnya` as `doc_attr_lainnya`, `d`.`is_locked` as `lockedAttr`
+FROM `_absen_kehadiran` `a`
+LEFT JOIN `_ref_tahun_tw` `b` ON `a`.`id_tahun_tw` = `b`.`id`
+LEFT JOIN `_ptk_tb` `c` ON `a`.`id_ptk` = `c`.`id`
+LEFT JOIN `_upload_data_attribut` `d` ON `a`.`id_ptk` = `d`.`id_ptk` AND `a`.`id_tahun_tw` = `d`.`id_tahun_tw`
+WHERE `a`.`id_ptk` = :a.id_ptk:
+ORDER BY `b`.`tahun` DESC
+ LIMIT 10', [...], false)
+ 5 APPPATH/Models/Situgu/Ops/DocptkModel.php(68): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Situgu/Ops/Doc/Ptk.php(132): App\Models\Situgu\Ops\DocptkModel->get_datatables()
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Doc\Ptk->getAllDoc()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Doc\Ptk))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-07 11:13:05 --> syntax error, unexpected 'return' (T_RETURN)
+in APPPATH/Controllers/Situgu/Ops/Home.php on line 46.
+ 1 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('situgu/ops/home')
+ 2 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('situgu/ops/home')
+ 3 SYSTEMPATH/CodeIgniter.php(779): CodeIgniter\Router\Router->handle('situgu/ops/home')
+ 4 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-07 11:58:38 --> Undefined property: stdClass::$jumlah_all
+in APPPATH/Views/situgu/ops/home/index.php on line 277.
+ 1 APPPATH/Views/situgu/ops/home/index.php(277): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$jumlah_all', 'APPPATH/Views/situgu/ops/home/index.php', 277, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ops/home/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ops/home/index', [], true)
+ 5 APPPATH/Controllers/Situgu/Ops/Home.php(49): view('situgu/ops/home/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-07 12:07:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM `_tb_infopop`
+WHERE `tampil` = 1 AND `tujuan_role` LIKE '%OPS%'
+ORDER BY...' at line 2 in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *, (SELE...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, (SELE...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, (SELE...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, (SELE...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ops/Home.php(47): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Home->index()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Home))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-07 12:07:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'FROM `_tb_infopop`
+WHERE `tampil` = 1 AND `tujuan_role` LIKE '%OPS%'
+ORDER BY...' at line 2
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *, (SELECT count(*) FROM _tb_infopop WHERE tampil = 1 AND tujuan_role LIKE \'%OPS%\'
+FROM `_tb_infopop`
+WHERE `tampil` = 1 AND `tujuan_role` LIKE \'%OPS%\'
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, (SELECT count(*) FROM _tb_infopop WHERE tampil = 1 AND tujuan_role LIKE \'%OPS%\'
+FROM `_tb_infopop`
+WHERE `tampil` = 1 AND `tujuan_role` LIKE \'%OPS%\'
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, (SELECT count(*) FROM _tb_infopop WHERE tampil = 1 AND tujuan_role LIKE \'%OPS%\'
+FROM `_tb_infopop`
+WHERE `tampil` = 1 AND `tujuan_role` LIKE \'%OPS%\'
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *, (SELECT count(*) FROM _tb_infopop WHERE tampil = 1 AND tujuan_role LIKE \'%OPS%\'
+FROM `_tb_infopop`
+WHERE `tampil` = 1 AND `tujuan_role` LIKE \'%OPS%\'
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 APPPATH/Controllers/Situgu/Ops/Home.php(47): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Home))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-07 20:17:54 --> Use of undefined constant faltruse - assumed 'faltruse' (this will throw an Error in a future version of PHP)
+in APPPATH/Controllers/Situgu/Ptk/Home.php on line 172.
+ 1 APPPATH/Controllers/Situgu/Ptk/Home.php(172): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant faltruse - assumed \'faltruse\' (this will throw an Error in a future version of PHP)', 'APPPATH/Controllers/Situgu/Ptk/Home.php', 172, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Home->kirimAktivasiWa()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

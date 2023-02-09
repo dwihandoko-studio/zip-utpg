@@ -1,0 +1,30 @@
+ERROR - 2022-09-03 00:29:23 --> mysqli_sql_exception: Unknown column 'urut' in 'field list' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `_t...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `_t...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `_t...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `_t...', Array, false)
+#4 /var/www/app/Controllers/A/Setting/Menulain.php(375): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\A\Setting\Menulain->addSave()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Setting\Menulain))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-03 00:51:58 --> Undefined variable: filenamelampiran
+in APPPATH/Controllers/A/Setting/Menulain.php on line 522.
+ 1 APPPATH/Controllers/A/Setting/Menulain.php(522): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: filenamelampiran', 'APPPATH/Controllers/A/Setting/Menulain.php', 522, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\A\Setting\Menulain->editSave()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Setting\Menulain))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-03 14:38:11 --> Trying to get property 'id' of non-object
+in APPPATH/Views/a/informasi/sop/add.php on line 12.
+ 1 APPPATH/Views/a/informasi/sop/add.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'id\' of non-object', 'APPPATH/Views/a/informasi/sop/add.php', 12, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/a/informasi/sop/add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('a/informasi/sop/add', [], true)
+ 5 APPPATH/Controllers/A/Informasi/Sop.php(117): view('a/informasi/sop/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\A\Informasi\Sop->add()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Informasi\Sop))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

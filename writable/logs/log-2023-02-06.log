@@ -1,0 +1,120 @@
+ERROR - 2023-02-06 11:00:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL
+ORDER BY `nama` ASC' at line 4 in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `i...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `i...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `i...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `i...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ops/Absen.php(145): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Absen->add()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Absen))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-06 11:00:28 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'NULL
+ORDER BY `nama` ASC' at line 4
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `id`, `id_ptk`, `nama`, `nuptk`, `nip`, `nik`, `status_kepegawaian`
+FROM `_ptk_tb`
+WHERE `npsn` = \'10801778\'
+AND last_sync NOT NULL
+ORDER BY `nama` ASC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `id`, `id_ptk`, `nama`, `nuptk`, `nip`, `nik`, `status_kepegawaian`
+FROM `_ptk_tb`
+WHERE `npsn` = \'10801778\'
+AND last_sync NOT NULL
+ORDER BY `nama` ASC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `id`, `id_ptk`, `nama`, `nuptk`, `nip`, `nik`, `status_kepegawaian`
+FROM `_ptk_tb`
+WHERE `npsn` = \'10801778\'
+AND last_sync NOT NULL
+ORDER BY `nama` ASC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `id`, `id_ptk`, `nama`, `nuptk`, `nip`, `nik`, `status_kepegawaian`
+FROM `_ptk_tb`
+WHERE `npsn` = :npsn:
+AND last_sync NOT NULL
+ORDER BY `nama` ASC', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ops/Absen.php(145): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Absen->add()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Absen))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 21:01:03 --> Invalid file: situgu/ks/verifikasi/tpg/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('situgu/ks/verifikasi/tpg/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ks/verifikasi/tpg/index', [], true)
+ 3 APPPATH/Controllers/Situgu/Ks/Verifikasi/Tpg.php(55): view('situgu/ks/verifikasi/tpg/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Verifikasi\Tpg->data()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Verifikasi\Tpg))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 21:09:55 --> Undefined property: stdClass::$lampiran_pangkat_terakhir
+in APPPATH/Views/situgu/ks/verifikasi/tpg/detail.php on line 248.
+ 1 APPPATH/Views/situgu/ks/verifikasi/tpg/detail.php(248): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$lampiran_pangkat_terakhir', 'APPPATH/Views/situgu/ks/verifikasi/tpg/detail.php', 248, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ks/verifikasi/tpg/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ks/verifikasi/tpg/detail', [], true)
+ 5 APPPATH/Controllers/Situgu/Ks/Verifikasi/Tpg.php(189): view('situgu/ks/verifikasi/tpg/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Verifikasi\Tpg->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Verifikasi\Tpg))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 21:20:18 --> Invalid file: situgu/ptk/404.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('situgu/ptk/404.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ptk/404', [], true)
+ 3 APPPATH/Controllers/Situgu/Ptk/Masterdata/Dapodik.php(55): view('situgu/ptk/404', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Masterdata\Dapodik->data()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Masterdata\Dapodik))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-02-06 21:54:26 --> Undefined variable: variable
+in APPPATH/Views/situgu/ks/verifikasi/tpg/detail.php on line 121.
+ 1 APPPATH/Views/situgu/ks/verifikasi/tpg/detail.php(121): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: variable', 'APPPATH/Views/situgu/ks/verifikasi/tpg/detail.php', 121, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ks/verifikasi/tpg/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ks/verifikasi/tpg/detail', [], true)
+ 5 APPPATH/Controllers/Situgu/Ks/Verifikasi/Tpg.php(194): view('situgu/ks/verifikasi/tpg/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Verifikasi\Tpg->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Verifikasi\Tpg))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-02-06 22:49:29 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ks/Verifikasi/Tpg.php(190): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Verifikasi\Tpg->detail()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Verifikasi\Tpg))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-02-06 22:49:29 --> Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '='
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `b`.`npsn`, `b`.`nama` as `namaSekolah`, (SELECT SUM(jam_mengajar_per_minggu) FROM _pembelajaran_dapodik WHERE ptk_id = a.ptk_id AND sekolah_id = a.sekolah_id AND semester_id = a.semester_id) as jumlah_total_jam_mengajar_perminggu
+FROM `_ptk_tb_dapodik` `a`
+JOIN `ref_sekolah` `b` ON `a`.`sekolah_id` = `b`.`id`
+WHERE `a`.`ptk_id` = \'c0282b79-8b18-e111-b395-194e71486fe9\'
+ORDER BY `a`.`ptk_induk` DESC', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `b`.`npsn`, `b`.`nama` as `namaSekolah`, (SELECT SUM(jam_mengajar_per_minggu) FROM _pembelajaran_dapodik WHERE ptk_id = a.ptk_id AND sekolah_id = a.sekolah_id AND semester_id = a.semester_id) as jumlah_total_jam_mengajar_perminggu
+FROM `_ptk_tb_dapodik` `a`
+JOIN `ref_sekolah` `b` ON `a`.`sekolah_id` = `b`.`id`
+WHERE `a`.`ptk_id` = \'c0282b79-8b18-e111-b395-194e71486fe9\'
+ORDER BY `a`.`ptk_induk` DESC')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `b`.`npsn`, `b`.`nama` as `namaSekolah`, (SELECT SUM(jam_mengajar_per_minggu) FROM _pembelajaran_dapodik WHERE ptk_id = a.ptk_id AND sekolah_id = a.sekolah_id AND semester_id = a.semester_id) as jumlah_total_jam_mengajar_perminggu
+FROM `_ptk_tb_dapodik` `a`
+JOIN `ref_sekolah` `b` ON `a`.`sekolah_id` = `b`.`id`
+WHERE `a`.`ptk_id` = \'c0282b79-8b18-e111-b395-194e71486fe9\'
+ORDER BY `a`.`ptk_induk` DESC')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`npsn`, `b`.`nama` as `namaSekolah`, (SELECT SUM(jam_mengajar_per_minggu) FROM _pembelajaran_dapodik WHERE ptk_id = a.ptk_id AND sekolah_id = a.sekolah_id AND semester_id = a.semester_id) as jumlah_total_jam_mengajar_perminggu
+FROM `_ptk_tb_dapodik` `a`
+JOIN `ref_sekolah` `b` ON `a`.`sekolah_id` = `b`.`id`
+WHERE `a`.`ptk_id` = :a.ptk_id:
+ORDER BY `a`.`ptk_induk` DESC', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ks/Verifikasi/Tpg.php(190): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Verifikasi\Tpg->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Verifikasi\Tpg))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

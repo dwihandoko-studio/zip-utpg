@@ -1,0 +1,237 @@
+ERROR - 2023-01-30 12:10:21 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /var/www/app/Models/Situgu/Ks/SptjmModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/Controllers/Situgu/Ks/Sptjm/Tamsil.php(68): App\Models\Situgu\Ks\SptjmModel->get_datatables('10801778', 'tamsil')
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->getAll()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-30 12:10:21 --> Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '='
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `b`.`nama`, `b`.`bentuk_pendidikan`, `b`.`kode_kecamatan`, `c`.`tahun`, `c`.`tw`
+FROM `_tb_sptjm` `a`
+JOIN `ref_sekolah` `b` ON `a`.`npsn` = `b`.`npsn`
+JOIN `_ref_tahun_tw` `c` ON `a`.`id_tahun_tw` = `c`.`id`
+WHERE `a`.`jenis_usulan` = \'tamsil\'
+AND `a`.`npsn` = \'10801778\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+ORDER BY `a`.`created_at` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `b`.`nama`, `b`.`bentuk_pendidikan`, `b`.`kode_kecamatan`, `c`.`tahun`, `c`.`tw`
+FROM `_tb_sptjm` `a`
+JOIN `ref_sekolah` `b` ON `a`.`npsn` = `b`.`npsn`
+JOIN `_ref_tahun_tw` `c` ON `a`.`id_tahun_tw` = `c`.`id`
+WHERE `a`.`jenis_usulan` = \'tamsil\'
+AND `a`.`npsn` = \'10801778\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+ORDER BY `a`.`created_at` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `b`.`nama`, `b`.`bentuk_pendidikan`, `b`.`kode_kecamatan`, `c`.`tahun`, `c`.`tw`
+FROM `_tb_sptjm` `a`
+JOIN `ref_sekolah` `b` ON `a`.`npsn` = `b`.`npsn`
+JOIN `_ref_tahun_tw` `c` ON `a`.`id_tahun_tw` = `c`.`id`
+WHERE `a`.`jenis_usulan` = \'tamsil\'
+AND `a`.`npsn` = \'10801778\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+ORDER BY `a`.`created_at` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`nama`, `b`.`bentuk_pendidikan`, `b`.`kode_kecamatan`, `c`.`tahun`, `c`.`tw`
+FROM `_tb_sptjm` `a`
+JOIN `ref_sekolah` `b` ON `a`.`npsn` = `b`.`npsn`
+JOIN `_ref_tahun_tw` `c` ON `a`.`id_tahun_tw` = `c`.`id`
+WHERE `a`.`jenis_usulan` = :a.jenis_usulan:
+AND `a`.`npsn` = :a.npsn:
+AND `a`.`id_tahun_tw` = :a.id_tahun_tw:
+ORDER BY `a`.`created_at` DESC
+ LIMIT 10', [...], false)
+ 5 APPPATH/Models/Situgu/Ks/SptjmModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(68): App\Models\Situgu\Ks\SptjmModel->get_datatables('10801778', 'tamsil')
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->getAll()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-30 12:12:07 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /var/www/app/Models/Situgu/Ks/SptjmModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/Controllers/Situgu/Ks/Sptjm/Tamsil.php(68): App\Models\Situgu\Ks\SptjmModel->get_datatables('10801778', 'tamsil')
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->getAll()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-30 12:12:07 --> Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '='
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `b`.`nama`, `b`.`bentuk_pendidikan`, `b`.`kode_kecamatan`, `c`.`tahun`, `c`.`tw`
+FROM `_tb_sptjm` `a`
+JOIN `ref_sekolah` `b` ON `a`.`npsn` = `b`.`npsn`
+JOIN `_ref_tahun_tw` `c` ON `a`.`id_tahun_tw` = `c`.`id`
+WHERE `a`.`jenis_usulan` = \'tamsil\'
+AND `a`.`npsn` = \'10801778\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+ORDER BY `a`.`created_at` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `b`.`nama`, `b`.`bentuk_pendidikan`, `b`.`kode_kecamatan`, `c`.`tahun`, `c`.`tw`
+FROM `_tb_sptjm` `a`
+JOIN `ref_sekolah` `b` ON `a`.`npsn` = `b`.`npsn`
+JOIN `_ref_tahun_tw` `c` ON `a`.`id_tahun_tw` = `c`.`id`
+WHERE `a`.`jenis_usulan` = \'tamsil\'
+AND `a`.`npsn` = \'10801778\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+ORDER BY `a`.`created_at` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `b`.`nama`, `b`.`bentuk_pendidikan`, `b`.`kode_kecamatan`, `c`.`tahun`, `c`.`tw`
+FROM `_tb_sptjm` `a`
+JOIN `ref_sekolah` `b` ON `a`.`npsn` = `b`.`npsn`
+JOIN `_ref_tahun_tw` `c` ON `a`.`id_tahun_tw` = `c`.`id`
+WHERE `a`.`jenis_usulan` = \'tamsil\'
+AND `a`.`npsn` = \'10801778\'
+AND `a`.`id_tahun_tw` = \'ec683ab1-9763-11ed-965b-0242ac1a0003\'
+ORDER BY `a`.`created_at` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`nama`, `b`.`bentuk_pendidikan`, `b`.`kode_kecamatan`, `c`.`tahun`, `c`.`tw`
+FROM `_tb_sptjm` `a`
+JOIN `ref_sekolah` `b` ON `a`.`npsn` = `b`.`npsn`
+JOIN `_ref_tahun_tw` `c` ON `a`.`id_tahun_tw` = `c`.`id`
+WHERE `a`.`jenis_usulan` = :a.jenis_usulan:
+AND `a`.`npsn` = :a.npsn:
+AND `a`.`id_tahun_tw` = :a.id_tahun_tw:
+ORDER BY `a`.`created_at` DESC
+ LIMIT 10', [...], false)
+ 5 APPPATH/Models/Situgu/Ks/SptjmModel.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(68): App\Models\Situgu\Ks\SptjmModel->get_datatables('10801778', 'tamsil')
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->getAll()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 12:35:10 --> Undefined variable: ptk
+in APPPATH/Views/situgu/ks/sptjm/tamsil/add.php on line 61.
+ 1 APPPATH/Views/situgu/ks/sptjm/tamsil/add.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ptk', 'APPPATH/Views/situgu/ks/sptjm/tamsil/add.php', 61, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ks/sptjm/tamsil/add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ks/sptjm/tamsil/add', [], true)
+ 5 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(185): view('situgu/ks/sptjm/tamsil/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->add()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 12:50:49 --> Trying to get property 'nama' of non-object
+in APPPATH/Views/situgu/ks/sptjm/tamsil/add.php on line 157.
+ 1 APPPATH/Views/situgu/ks/sptjm/tamsil/add.php(157): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'nama\' of non-object', 'APPPATH/Views/situgu/ks/sptjm/tamsil/add.php', 157, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ks/sptjm/tamsil/add.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ks/sptjm/tamsil/add', [], true)
+ 5 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(185): view('situgu/ks/sptjm/tamsil/add', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->add()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-30 23:14:05 --> mysqli_sql_exception: Unknown column 'jenis_usulan_tunjangan' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ks/Sptjm/Tamsil.php(423): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-30 23:14:05 --> Unknown column 'jenis_usulan_tunjangan' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `v_temp_usulan`
+WHERE `id_ptk_usulan` = \'fa892f32-4ae0-41f2-b\'
+AND `status_usulan` = 5
+AND `jenis_usulan_tunjangan` = \'tamsil\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `v_temp_usulan`
+WHERE `id_ptk_usulan` = \'fa892f32-4ae0-41f2-b\'
+AND `status_usulan` = 5
+AND `jenis_usulan_tunjangan` = \'tamsil\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `v_temp_usulan`
+WHERE `id_ptk_usulan` = \'fa892f32-4ae0-41f2-b\'
+AND `status_usulan` = 5
+AND `jenis_usulan_tunjangan` = \'tamsil\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `v_temp_usulan`
+WHERE `id_ptk_usulan` = :id_ptk_usulan:
+AND `status_usulan` = :status_usulan:
+AND `jenis_usulan_tunjangan` = :jenis_usulan_tunjangan:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(423): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 23:19:50 --> Undefined property: stdClass::$gelar_depan
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 469.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(469): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$gelar_depan', 'APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php', 469, [...])
+ 2 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(440): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 23:19:50 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes)
+in APPPATH/Views/errors/html/error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-30 23:33:57 --> Undefined property: stdClass::$gelar_depan
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 469.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(469): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$gelar_depan', 'APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php', 469, [...])
+ 2 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(440): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 23:33:57 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 98570240 bytes)
+in APPPATH/Views/errors/html/error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-30 23:34:07 --> Undefined property: stdClass::$gelar_depan
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 469.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(469): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$gelar_depan', 'APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php', 469, [...])
+ 2 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(440): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 23:34:08 --> Allowed memory size of 134217728 bytes exhausted (tried to allocate 98570240 bytes)
+in APPPATH/Views/errors/html/error_exception.php on line 96.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-01-30 23:37:16 --> Undefined property: stdClass::$gelar_depan
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 469.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(469): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$gelar_depan', 'APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php', 469, [...])
+ 2 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(440): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 3 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 23:53:43 --> Call to undefined method Spatie\PdfToText\Pdf::getTableContent()
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 564.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(441): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 23:55:06 --> Call to undefined method Spatie\PdfToText\Pdf::getTableContent()
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 564.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(441): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-30 23:58:32 --> Call to undefined method Spatie\PdfToText\Pdf::getTableContent()
+in APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php on line 564.
+ 1 APPPATH/Controllers/Situgu/Ks/Sptjm/Tamsil.php(441): App\Controllers\Situgu\Ks\Sptjm\Tamsil->_download([...], Object(stdClass), Object(stdClass), Object(stdClass))
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ks\Sptjm\Tamsil->download()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ks\Sptjm\Tamsil))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

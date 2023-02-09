@@ -1,0 +1,44 @@
+CRITICAL - 2022-09-06 10:52:11 --> Undefined property: stdClass::$judul
+in APPPATH/Views/a/data/pegawai/detail.php on line 6.
+ 1 APPPATH/Views/a/data/pegawai/detail.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$judul', 'APPPATH/Views/a/data/pegawai/detail.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/a/data/pegawai/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('a/data/pegawai/detail', [], true)
+ 5 APPPATH/Controllers/A/Data/Pegawai.php(233): view('a/data/pegawai/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\A\Data\Pegawai->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Data\Pegawai))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-06 17:27:38 --> Undefined property: stdClass::$judul
+in APPPATH/Views/a/data/pegawai/detail.php on line 6.
+ 1 APPPATH/Views/a/data/pegawai/detail.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$judul', 'APPPATH/Views/a/data/pegawai/detail.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/a/data/pegawai/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('a/data/pegawai/detail', [], true)
+ 5 APPPATH/Controllers/A/Data/Pegawai.php(233): view('a/data/pegawai/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\A\Data\Pegawai->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Data\Pegawai))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-06 17:27:42 --> Undefined property: stdClass::$judul
+in APPPATH/Views/a/data/pegawai/detail.php on line 6.
+ 1 APPPATH/Views/a/data/pegawai/detail.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$judul', 'APPPATH/Views/a/data/pegawai/detail.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/a/data/pegawai/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('a/data/pegawai/detail', [], true)
+ 5 APPPATH/Controllers/A/Data/Pegawai.php(233): view('a/data/pegawai/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\A\Data\Pegawai->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Data\Pegawai))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-06 17:27:44 --> Undefined property: stdClass::$judul
+in APPPATH/Views/a/data/pegawai/detail.php on line 6.
+ 1 APPPATH/Views/a/data/pegawai/detail.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$judul', 'APPPATH/Views/a/data/pegawai/detail.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/a/data/pegawai/detail.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('a/data/pegawai/detail', [], true)
+ 5 APPPATH/Controllers/A/Data/Pegawai.php(233): view('a/data/pegawai/detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\A\Data\Pegawai->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Data\Pegawai))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

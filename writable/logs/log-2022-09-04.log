@@ -1,0 +1,14 @@
+CRITICAL - 2022-09-04 23:21:19 --> Undefined property: stdClass::$id
+in APPPATH/Controllers/A/Informasi/Agenda.php on line 37.
+ 1 APPPATH/Controllers/A/Informasi/Agenda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id', 'APPPATH/Controllers/A/Informasi/Agenda.php', 37, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\A\Informasi\Agenda->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Informasi\Agenda))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-04 23:21:30 --> Undefined property: stdClass::$id
+in APPPATH/Controllers/A/Informasi/Agenda.php on line 37.
+ 1 APPPATH/Controllers/A/Informasi/Agenda.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id', 'APPPATH/Controllers/A/Informasi/Agenda.php', 37, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\A\Informasi\Agenda->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Informasi\Agenda))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

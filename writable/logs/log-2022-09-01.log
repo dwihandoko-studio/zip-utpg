@@ -1,0 +1,41 @@
+ERROR - 2022-09-01 23:04:24 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Models/A/PenggunaModel.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/Controllers/A/Setting/Hakaccess.php(27): App\Models\A\PenggunaModel->get_datatables()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\A\Setting\Hakaccess->getAll()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Setting\Hakaccess))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-09-01 23:04:24 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_users_tb`
+WHERE `id` != 1
+ORDER BY `level` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_users_tb`
+WHERE `id` != 1
+ORDER BY `level` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_users_tb`
+WHERE `id` != 1
+ORDER BY `level` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_users_tb`
+WHERE `id` != 1
+ORDER BY `level` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH/Models/A/PenggunaModel.php(56): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/A/Setting/Hakaccess.php(27): App\Models\A\PenggunaModel->get_datatables()
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\A\Setting\Hakaccess->getAll()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\A\Setting\Hakaccess))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

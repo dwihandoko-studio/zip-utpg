@@ -1,0 +1,196 @@
+ERROR - 2023-01-21 14:12:28 --> mysqli_sql_exception: Column 'id' in where clause is ambiguous in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.`ptk...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`ptk...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`ptk...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`ptk...', Array, false)
+#4 /var/www/app/Libraries/Helplib.php(36): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/Controllers/Situgu/Ptk/Absen.php(64): App\Libraries\Helplib->getPtkId('64a9e496-e0bb-4...')
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Absen->getAll()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Absen))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-21 14:12:28 --> Column 'id' in where clause is ambiguous
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.`ptk_id`, `b`.`id`
+FROM `_profil_users_tb` `a`
+LEFT JOIN `_ptk_tb` `b` ON `a`.`ptk_id` = `b`.`id_ptk`
+WHERE `id` = \'64a9e496-e0bb-48d2-abb9-22778b855ec1\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.`ptk_id`, `b`.`id`
+FROM `_profil_users_tb` `a`
+LEFT JOIN `_ptk_tb` `b` ON `a`.`ptk_id` = `b`.`id_ptk`
+WHERE `id` = \'64a9e496-e0bb-48d2-abb9-22778b855ec1\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.`ptk_id`, `b`.`id`
+FROM `_profil_users_tb` `a`
+LEFT JOIN `_ptk_tb` `b` ON `a`.`ptk_id` = `b`.`id_ptk`
+WHERE `id` = \'64a9e496-e0bb-48d2-abb9-22778b855ec1\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.`ptk_id`, `b`.`id`
+FROM `_profil_users_tb` `a`
+LEFT JOIN `_ptk_tb` `b` ON `a`.`ptk_id` = `b`.`id_ptk`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH/Libraries/Helplib.php(36): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Situgu/Ptk/Absen.php(64): App\Libraries\Helplib->getPtkId('64a9e496-e0bb-48d2-abb9-22778b855ec1')
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Absen->getAll()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Absen))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 14:36:20 --> Undefined variable: id
+in APPPATH/Views/situgu/ptk/doc/master/index.php on line 236.
+ 1 APPPATH/Views/situgu/ptk/doc/master/index.php(236): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Views/situgu/ptk/doc/master/index.php', 236, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ptk/doc/master/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ptk/doc/master/index', [], true)
+ 5 APPPATH/Controllers/Situgu/Ptk/Doc/Master.php(395): view('situgu/ptk/doc/master/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Doc\Master->data()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Doc\Master))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 14:37:47 --> Undefined property: stdClass::$id_tahun_tw
+in APPPATH/Views/situgu/ptk/doc/master/index.php on line 76.
+ 1 APPPATH/Views/situgu/ptk/doc/master/index.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_tahun_tw', 'APPPATH/Views/situgu/ptk/doc/master/index.php', 76, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ptk/doc/master/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ptk/doc/master/index', [], true)
+ 5 APPPATH/Controllers/Situgu/Ptk/Doc/Master.php(395): view('situgu/ptk/doc/master/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Doc\Master->data()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Doc\Master))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 14:46:23 --> Undefined variable: tw
+in APPPATH/Views/situgu/ops/doc/ptk/upload.php on line 3.
+ 1 APPPATH/Views/situgu/ops/doc/ptk/upload.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: tw', 'APPPATH/Views/situgu/ops/doc/ptk/upload.php', 3, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ops/doc/ptk/upload.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ops/doc/ptk/upload', [], true)
+ 5 APPPATH/Controllers/Situgu/Ptk/Doc/Master.php(99): view('situgu/ops/doc/ptk/upload', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Doc\Master->formupload()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Doc\Master))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 14:47:08 --> Undefined variable: id
+in APPPATH/Views/situgu/ptk/doc/master/upload.php on line 3.
+ 1 APPPATH/Views/situgu/ptk/doc/master/upload.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'APPPATH/Views/situgu/ptk/doc/master/upload.php', 3, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ptk/doc/master/upload.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ptk/doc/master/upload', [], true)
+ 5 APPPATH/Controllers/Situgu/Ptk/Doc/Master.php(99): view('situgu/ptk/doc/master/upload', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Doc\Master->formupload()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Doc\Master))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 15:56:30 --> mysqli_sql_exception: Column 'pang_tahun' cannot be null in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `_u...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `_u...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `_u...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `_u...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ptk/Doc/Atribut.php(312): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Doc\Atribut->addSave()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Doc\Atribut))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2023-01-21 15:57:18 --> mysqli_sql_exception: Column 'pang_tahun' cannot be null in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('INSERT INTO `_u...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `_u...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `_u...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `_u...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ptk/Doc/Atribut.php(312): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Doc\Atribut->addSave()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Doc\Atribut))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 16:00:28 --> Undefined property: stdClass::$status_kepegawaian
+in APPPATH/Controllers/Situgu/Ptk/Doc/Atribut.php on line 93.
+ 1 APPPATH/Controllers/Situgu/Ptk/Doc/Atribut.php(93): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$status_kepegawaian', 'APPPATH/Controllers/Situgu/Ptk/Doc/Atribut.php', 93, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Doc\Atribut->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Doc\Atribut))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 23:10:51 --> Undefined variable: ptk
+in APPPATH/Views/situgu/ptk/us/ajukan/index.php on line 461.
+ 1 APPPATH/Views/situgu/ptk/us/ajukan/index.php(461): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ptk', 'APPPATH/Views/situgu/ptk/us/ajukan/index.php', 461, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ptk/us/ajukan/index.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ptk/us/ajukan/index', [], true)
+ 5 APPPATH/Controllers/Situgu/Ptk/Us/Ajukan.php(54): view('situgu/ptk/us/ajukan/index', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Us\Ajukan->data()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Us\Ajukan))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 23:41:37 --> mysqli_sql_exception: Unknown column 'uid' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ops/Masterdata/Pengguna.php(577): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 23:41:37 --> Unknown column 'uid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'3e78cf79-8236-414d-9e28-ead74ae5028f\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'3e78cf79-8236-414d-9e28-ead74ae5028f\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'3e78cf79-8236-414d-9e28-ead74ae5028f\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = :uid:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ops/Masterdata/Pengguna.php(577): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-21 23:41:53 --> mysqli_sql_exception: Unknown column 'uid' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Ops/Masterdata/Pengguna.php(577): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-21 23:41:53 --> Unknown column 'uid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'3e78cf79-8236-414d-9e28-ead74ae5028f\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'3e78cf79-8236-414d-9e28-ead74ae5028f\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'3e78cf79-8236-414d-9e28-ead74ae5028f\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = :uid:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Ops/Masterdata/Pengguna.php(577): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Pengguna->detail()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Pengguna))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-21 23:43:28 --> Undefined variable: data
+in APPPATH/Views/situgu/ptk/us/ajukan/pilihan.php on line 91.
+ 1 APPPATH/Views/situgu/ptk/us/ajukan/pilihan.php(91): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'APPPATH/Views/situgu/ptk/us/ajukan/pilihan.php', 91, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/situgu/ptk/us/ajukan/pilihan.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ptk/us/ajukan/pilihan', [], true)
+ 5 APPPATH/Controllers/Situgu/Ptk/Us/Ajukan.php(129): view('situgu/ptk/us/ajukan/pilihan', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ptk\Us\Ajukan->aksiajukan()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ptk\Us\Ajukan))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

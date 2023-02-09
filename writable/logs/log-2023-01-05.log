@@ -1,0 +1,220 @@
+CRITICAL - 2023-01-05 12:57:54 --> Undefined property: stdClass::$jenit_ptk
+in APPPATH/Controllers/Situgu/Su/Masterdata/Ptk.php on line 53.
+ 1 APPPATH/Controllers/Situgu/Su/Masterdata/Ptk.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$jenit_ptk', 'APPPATH/Controllers/Situgu/Su/Masterdata/Ptk.php', 53, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Su\Masterdata\Ptk->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Su\Masterdata\Ptk))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 13:46:50 --> Undefined property: stdClass::$nama
+in APPPATH/Controllers/Situgu/Su/Masterdata/Pengguna.php on line 40.
+ 1 APPPATH/Controllers/Situgu/Su/Masterdata/Pengguna.php(40): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$nama', 'APPPATH/Controllers/Situgu/Su/Masterdata/Pengguna.php', 40, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Su\Masterdata\Pengguna->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Su\Masterdata\Pengguna))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 13:47:48 --> Undefined property: stdClass::$id_ptk
+in APPPATH/Controllers/Situgu/Su/Masterdata/Pengguna.php on line 41.
+ 1 APPPATH/Controllers/Situgu/Su/Masterdata/Pengguna.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: stdClass::$id_ptk', 'APPPATH/Controllers/Situgu/Su/Masterdata/Pengguna.php', 41, [...])
+ 2 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Su\Masterdata\Pengguna->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Su\Masterdata\Pengguna))
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 16:19:35 --> mysqli_sql_exception: Unknown table 'utpg_disdikbud.a' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /var/www/app/Models/Situgu/Su/SettingaccessmtModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/Controllers/Situgu/Su/Setting/Accessmt.php(29): App\Models\Situgu\Su\SettingaccessmtModel->get_datatables()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Su\Setting\Accessmt->getAll()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Su\Setting\Accessmt))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 16:19:35 --> Unknown table 'utpg_disdikbud.a'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH/Models/Situgu/Su/SettingaccessmtModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Situgu/Su/Setting/Accessmt.php(29): App\Models\Situgu\Su\SettingaccessmtModel->get_datatables()
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Su\Setting\Accessmt->getAll()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Su\Setting\Accessmt))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 16:19:46 --> mysqli_sql_exception: Unknown table 'utpg_disdikbud.a' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /var/www/app/Models/Situgu/Su/SettingaccessmtModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/Controllers/Situgu/Su/Setting/Accessmt.php(29): App\Models\Situgu\Su\SettingaccessmtModel->get_datatables()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Su\Setting\Accessmt->getAll()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Su\Setting\Accessmt))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 16:19:46 --> Unknown table 'utpg_disdikbud.a'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH/Models/Situgu/Su/SettingaccessmtModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Situgu/Su/Setting/Accessmt.php(29): App\Models\Situgu\Su\SettingaccessmtModel->get_datatables()
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Su\Setting\Accessmt->getAll()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Su\Setting\Accessmt))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 16:20:26 --> mysqli_sql_exception: Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `...', Array, false)
+#4 /var/www/app/Models/Situgu/Su/SettingaccessmtModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/app/Controllers/Situgu/Su/Setting/Accessmt.php(29): App\Models\Situgu\Su\SettingaccessmtModel->get_datatables()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Su\Setting\Accessmt->getAll()
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Su\Setting\Accessmt))
+#8 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-05 16:20:26 --> Illegal mix of collations (utf8mb4_general_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '='
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt` `a`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt` `a`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt` `a`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `a`.*, `b`.`fullname`, `b`.`email`, `b`.`no_hp`, `b`.`npsn`, `b`.`role_user`, `c`.`role` as `role_name`
+FROM `granted_mt` `a`
+LEFT JOIN `_profil_users_tb` `b` ON `a`.`id` = `b`.`id`
+LEFT JOIN `_role_user` `c` ON `b`.`role_user` = `c`.`id`
+ORDER BY `b`.`role_user` ASC
+ LIMIT 10', [], false)
+ 5 APPPATH/Models/Situgu/Su/SettingaccessmtModel.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Situgu/Su/Setting/Accessmt.php(29): App\Models\Situgu\Su\SettingaccessmtModel->get_datatables()
+ 7 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Su\Setting\Accessmt->getAll()
+ 8 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Su\Setting\Accessmt))
+ 9 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-05 17:08:48 --> mysqli_sql_exception: Unknown column 'uid' in 'where clause' in /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /var/www/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /var/www/vendor/codeigniter4/framework/system/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /var/www/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /var/www/app/Controllers/Situgu/Su/Masterdata/Ptk.php(285): CodeIgniter\Database\BaseBuilder->get()
+#5 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(904): App\Controllers\Situgu\Su\Masterdata\Ptk->delete()
+#6 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Su\Masterdata\Ptk))
+#7 /var/www/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /var/www/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-05 17:08:48 --> Unknown column 'uid' in 'where clause'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'1ad068b5-7dda-11eb-9ec5-cae34eafba4a\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'1ad068b5-7dda-11eb-9ec5-cae34eafba4a\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `_users_tb`
+WHERE `uid` = \'1ad068b5-7dda-11eb-9ec5-cae34eafba4a\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `_users_tb`
+WHERE `uid` = :uid:', [...], false)
+ 5 APPPATH/Controllers/Situgu/Su/Masterdata/Ptk.php(285): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Su\Masterdata\Ptk->delete()
+ 7 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Su\Masterdata\Ptk))
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 19:40:09 --> Class 'App\Controllers\Situgu\BaseController' not found
+in APPPATH/Controllers/Situgu/Maintenance.php on line 9.
+ 1 SYSTEMPATH/Router/AutoRouter.php(147): include_once()
+ 2 SYSTEMPATH/Router/Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('situgu/maintenance')
+ 3 SYSTEMPATH/Router/Router.php(205): CodeIgniter\Router\Router->autoRoute('situgu/maintenance')
+ 4 SYSTEMPATH/CodeIgniter.php(779): CodeIgniter\Router\Router->handle('situgu/maintenance')
+ 5 SYSTEMPATH/CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 19:42:51 --> syntax error, unexpected ')', expecting variable (T_VARIABLE) or '{' or '$'
+in APPPATH/Filters/Filterauth.php on line 42.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Filters/Filterauth.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Filters\\Filterauth')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Filters\\Filterauth')
+ 4 SYSTEMPATH/Filters/Filters.php(166): spl_autoload_call('App\\Filters\\Filterauth')
+ 5 SYSTEMPATH/CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('situgu/maintenance', 'before')
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 19:44:23 --> Object of class stdClass could not be converted to string
+in APPPATH/Controllers/Situgu/Maintenance.php on line 24.
+ 1 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Maintenance->index()
+ 2 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Maintenance))
+ 3 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-05 22:31:59 --> Invalid file: situgu/ops/masterdata/ptk/index.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('situgu/ops/masterdata/ptk/index.php')
+ 2 SYSTEMPATH/Common.php(1142): CodeIgniter\View\View->render('situgu/ops/masterdata/ptk/index', [], true)
+ 3 APPPATH/Controllers/Situgu/Ops/Masterdata/Ptk.php(124): view('situgu/ops/masterdata/ptk/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(904): App\Controllers\Situgu\Ops\Masterdata\Ptk->data()
+ 5 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Situgu\Ops\Masterdata\Ptk))
+ 6 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
